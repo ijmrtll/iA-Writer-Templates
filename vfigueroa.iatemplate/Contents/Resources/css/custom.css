@@ -1,0 +1,186 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+Basic
+-----------------------------------------------------------------*/
+
+::selection {
+    background: #185142;
+    color: #FCBD8A;
+    text-shadow: none;
+}
+
+
+/* ----------------------------------------------------------------
+Header
+-----------------------------------------------------------------*/
+
+
+#header {
+    position: relative;
+    background-color: #FFF;
+    border-bottom: 0px solid #F5F5F5;
+}
+
+
+/* ----------------------------------------------------------------
+Primary Menu
+-----------------------------------------------------------------*/
+
+
+#primary-menu ul li:hover > a,
+#primary-menu ul li.current > a {
+    color: #fcbd8a;
+}
+
+#primary-menu ul li > a {
+    text-decoration: none !important;
+}
+
+/* Primary Menu - Style 6
+-----------------------------------------------------------------*/
+
+#primary-menu.style-6 > ul > li > a:after,
+#primary-menu.style-6 > ul > li.current > a:after,
+#primary-menu.style-6 > div > ul > li > a:after,
+#primary-menu.style-6 > div > ul > li.current > a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    border-top: 2px solid #fcbd8a;
+    -webkit-transition: width .3s ease;
+    -o-transition: width .3s ease;
+    transition: width .3s ease;
+
+
+}
+
+#primary-menu.style-2 ul li > a {
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+/* ----------------------------------------------------------------
+Content
+-----------------------------------------------------------------*/
+
+.content-wrap {
+    position: relative;
+    padding: 50px 0;
+}
+
+/* ----------------------------------------------------------------
+Blog
+-----------------------------------------------------------------*/
+
+.entry {
+    position: relative;
+    margin: 0 0 15px;
+}
+
+.entry:after {
+    content: '';
+    position: relative;
+    height: 0px;
+    margin-top: 15px;
+    background-color: #F5F5F5;
+}
+
+.entry-image {
+    margin-bottom: 15px;
+}
+
+
+/* Heading Block - with Subtitle
+-----------------------------------------------------------------*/
+
+.heading-block ~ p:not(.lead) {
+    font-size: 20px;
+}
+
+.heading-block ~ div > p {
+    font-size: 20px;
+}
+
+
+.heading-block ~ p > a {
+    text-decoration: underline !important;
+    color: #FCBD8A;
+}
+
+
+/* Post
+-----------------------------------------------------------------*/
+
+div.post-img {
+    width: 70%;
+}
+
+.postcontent,
+.sidebar,
+.col_full,
+.col_half,
+.col_one_third,
+.col_two_third,
+.col_three_fourth,
+.col_one_fourth,
+.col_one_fifth,
+.col_two_fifth,
+.col_three_fifth,
+.col_four_fifth,
+.col_one_sixth,
+.col_five_sixth {
+    display: block;
+    position: relative;
+    margin-right: 4%;
+    margin-bottom: 0px;
+    float: left;
+}
+
+.divider {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    color: #E5E5E5;
+    width: 100%;
+}
+
+
+/* ----------------------------------------------------------------
+Social Icons
+-----------------------------------------------------------------*/
+
+.social-icon {
+    position: relative;
+}
+
+.social-icon i:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.social-icon:hover i {
+    margin-top: 0 !important;
+}
+
+.social-icon:hover i:first-child {
+    opacity: 0;
+}
+
+.social-icon:hover i:last-child {
+    opacity: 1;
+}
